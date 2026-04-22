@@ -1,5 +1,7 @@
-langchain
+langchain==1.2.15
+langchain-core
 langchain-community
 langchain-groq
-checkov
-groq
+langgraph
+langchainhub
+pydantic
