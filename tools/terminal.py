@@ -9,7 +9,7 @@ def run_terraform_command(command: str):
     Input should be the full command string (e.g., 'terraform validate').
     """
   try:
-    result=subprocess.run(command, shell=True, capture_output=True, text=True)
+    result=subprocess.run(command, shell=True, capture_output=True, text=True) #risk here
     if result.returncode == 0:
             return f"Success:\n{result.stdout}"
     else:
